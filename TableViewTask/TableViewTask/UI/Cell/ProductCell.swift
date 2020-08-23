@@ -10,7 +10,7 @@ class ProductCell : UITableViewCell {
         didSet {
             // update the imageview on main thread once it has been downloaded from server
             DispatchQueue.main.async {
-                self.productImage.sd_setImage(with: URL(string: self.product?.imageURL ?? ""), placeholderImage: UIImage(named: ""))
+                self.productImage.sd_setImage(with: URL(string: self.product?.imageURL ?? ""), placeholderImage: UIImage(named: "applelogo"))
             }
             self.productNameLabel.text = self.product?.title
             self.productDescriptionLabel.text = self.product?.description
@@ -21,6 +21,7 @@ class ProductCell : UITableViewCell {
     private let productNameLabel : UILabel = {
         let lbl = UILabel()
         lbl.textColor = .black
+        lbl.font = UIFont.TitleFont()
         lbl.textAlignment = .left
         return lbl
     }()
@@ -29,6 +30,7 @@ class ProductCell : UITableViewCell {
     private let productDescriptionLabel : UILabel = {
         let lbl = UILabel()
         lbl.textColor = .black
+        lbl.font = UIFont.DescriptionFont()
         lbl.textAlignment = .left
         lbl.numberOfLines = 0
         return lbl
@@ -59,8 +61,8 @@ class ProductCell : UITableViewCell {
         productImage.contentMode = .scaleAspectFit
         productImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            productImage.widthAnchor.constraint(equalToConstant: 18),
-            productImage.heightAnchor.constraint(equalToConstant:  18),
+            productImage.widthAnchor.constraint(equalToConstant: UIDevice.current.userInterfaceIdiom == .pad ? FontSize.iPadImageWidthHeight.rawValue : FontSize.iPhoneImageWidthHeight.rawValue),
+            productImage.heightAnchor.constraint(equalToConstant:  UIDevice.current.userInterfaceIdiom == .pad ? FontSize.iPadImageWidthHeight.rawValue : FontSize.iPhoneImageWidthHeight.rawValue),
             productImage.topAnchor.constraint(equalTo: marginGuide.topAnchor, constant: -5),
             productImage.leftAnchor.constraint(equalTo: marginGuide.leftAnchor),
         ])

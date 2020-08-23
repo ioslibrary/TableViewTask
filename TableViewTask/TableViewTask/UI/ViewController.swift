@@ -44,9 +44,10 @@ class ViewController: UIViewController {
         // Add Refresh Control to Table View
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(refreshAction), for: .valueChanged)
-        tableView.refreshControl?.tintColor = .blue
+        tableView.refreshControl?.tintColor = UIColor.appThemeColor
         // call the api to fetch all the products from server
         self.productVM.fetchProducts()
+        IndicatorView.shared.showProgressView()
     }
 
     // Adding autolayout constraints on table View
@@ -82,12 +83,15 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: APIResponseProtocol {
     func errorHandler(error: ProductAPIError) {
         DispatchQueue.main.async {
+            IndicatorView.shared.hideProgressView()
             self.tableView.refreshControl?.endRefreshing()
+            UIAlertController.showAlertMessage(withTitle: "Error", withMessage: error.localizedDescription)
         }
     }
 
     func didReceiveResponse() {
         DispatchQueue.main.async {
+            IndicatorView.shared.hideProgressView()
             self.navigationController?.navigationBar.topItem?.title = self.productVM.getTitle()
             self.tableView.isHidden = false
             self.tableView.reloadData()

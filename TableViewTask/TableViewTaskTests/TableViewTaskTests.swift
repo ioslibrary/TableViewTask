@@ -1,10 +1,4 @@
-//
-//  TableViewTaskTests.swift
-//  TableViewTaskTests
-//
-//  Created by Jitendra Kumar on 23/08/20.
-//  Copyright © 2020 iOS developer. All rights reserved.
-//
+
 
 import XCTest
 @testable import TableViewTask
