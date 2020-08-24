@@ -1,7 +1,7 @@
 
 
 import UIKit
-//import SDWebImage
+import SDWebImage
 
 
 class ProductCell : UITableViewCell {
@@ -10,7 +10,7 @@ class ProductCell : UITableViewCell {
         didSet {
             // update the imageview on main thread once it has been downloaded from server
             DispatchQueue.main.async {
-                //self.productImage.sd_setImage(with: URL(string: self.product?.imageURL ?? ""), placeholderImage: UIImage(named: "applelogo"))
+                self.productImage.sd_setImage(with: URL(string: self.product?.imageURL ?? ""), placeholderImage: UIImage(named: "applelogo"))
             }
             self.productNameLabel.text = self.product?.title
             self.productDescriptionLabel.text = self.product?.description
