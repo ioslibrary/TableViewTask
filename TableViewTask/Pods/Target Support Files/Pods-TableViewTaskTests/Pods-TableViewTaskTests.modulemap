@@ -1,0 +1,6 @@
+framework module Pods_TableViewTaskTests {
+  umbrella header "Pods-TableViewTaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -21,11 +21,13 @@
 		7D456EF524F2A841002E1299 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D456EF024F2A841002E1299 /* Roboto-Bold.ttf */; };
 		7D456EF624F2A841002E1299 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D456EF124F2A841002E1299 /* Roboto-Black.ttf */; };
 		7D456EF924F2A853002E1299 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D456EF824F2A853002E1299 /* IndicatorView.swift */; };
+		7D456EFF24F2CF3B002E1299 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D456EFB24F2CF3B002E1299 /* MockURLProtocol.swift */; };
+		7D456F0024F2CF3B002E1299 /* MockProductWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D456EFC24F2CF3B002E1299 /* MockProductWebService.swift */; };
+		7D456F0124F2CF3B002E1299 /* ProductWebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D456EFE24F2CF3B002E1299 /* ProductWebServiceTest.swift */; };
 		7DAE20DB24F28EAD00EC29CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAE20DA24F28EAD00EC29CC /* AppDelegate.swift */; };
 		7DAE20DF24F28EAD00EC29CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAE20DE24F28EAD00EC29CC /* ViewController.swift */; };
 		7DAE20E424F28EB100EC29CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAE20E324F28EB100EC29CC /* Assets.xcassets */; };
 		7DAE20E724F28EB100EC29CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAE20E524F28EB100EC29CC /* LaunchScreen.storyboard */; };
-		7DAE20F224F28EB100EC29CC /* TableViewTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAE20F124F28EB100EC29CC /* TableViewTaskTests.swift */; };
 		8C478CB55BD99D3A5E1CE096 /* Pods_TableViewTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C56294A7305F3D2A967486 /* Pods_TableViewTaskTests.framework */; };
 		B5FF04F01545233796A39DC4 /* Pods_TableViewTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922FCB3D4FBF75C3D4436743 /* Pods_TableViewTask.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,9 @@
 		7D456EF024F2A841002E1299 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		7D456EF124F2A841002E1299 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		7D456EF824F2A853002E1299 /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		7D456EFB24F2CF3B002E1299 /* MockURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		7D456EFC24F2CF3B002E1299 /* MockProductWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockProductWebService.swift; sourceTree = "<group>"; };
+		7D456EFE24F2CF3B002E1299 /* ProductWebServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductWebServiceTest.swift; sourceTree = "<group>"; };
 		7DAE20D724F28EAD00EC29CC /* TableViewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DAE20DA24F28EAD00EC29CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DAE20DE24F28EAD00EC29CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +69,6 @@
 		7DAE20E624F28EB100EC29CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DAE20E824F28EB100EC29CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DAE20ED24F28EB100EC29CC /* TableViewTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DAE20F124F28EB100EC29CC /* TableViewTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTaskTests.swift; sourceTree = "<group>"; };
 		7DAE20F324F28EB100EC29CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		922FCB3D4FBF75C3D4436743 /* Pods_TableViewTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C56294A7305F3D2A967486 /* Pods_TableViewTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +193,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		7D456EFA24F2CF3B002E1299 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				7D456EFB24F2CF3B002E1299 /* MockURLProtocol.swift */,
+				7D456EFC24F2CF3B002E1299 /* MockProductWebService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		7D456EFD24F2CF3B002E1299 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7D456EFE24F2CF3B002E1299 /* ProductWebServiceTest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		7DAE20CE24F28EAD00EC29CC = {
 			isa = PBXGroup;
 			children = (
@@ -230,7 +251,8 @@
 		7DAE20F024F28EB100EC29CC /* TableViewTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				7DAE20F124F28EB100EC29CC /* TableViewTaskTests.swift */,
+				7D456EFA24F2CF3B002E1299 /* Mock */,
+				7D456EFD24F2CF3B002E1299 /* Network */,
 				7DAE20F324F28EB100EC29CC /* Info.plist */,
 			);
 			path = TableViewTaskTests;
@@ -437,7 +459,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DAE20F224F28EB100EC29CC /* TableViewTaskTests.swift in Sources */,
+				7D456F0024F2CF3B002E1299 /* MockProductWebService.swift in Sources */,
+				7D456F0124F2CF3B002E1299 /* ProductWebServiceTest.swift in Sources */,
+				7D456EFF24F2CF3B002E1299 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -567,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
